@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app_4/data/meals_data.dart';
-import 'package:meals_app_4/category_grid_item.dart';
+import 'package:meals_app_4/widgets/category_grid_item.dart';
 import 'package:meals_app_4/models/category.dart';
 import 'package:meals_app_4/models/meal.dart';
 import 'package:meals_app_4/screens/meals.dart';
 
 class CategoriesScreen extends StatefulWidget {
-  const CategoriesScreen({super.key, required this.onToggleFavorite, required this.availableMeals,});
+  const CategoriesScreen({
+    super.key,
+    required this.onToggleFavorite,
+    required this.availableMeals,
+  });
 
   final void Function(Meal meal) onToggleFavorite;
   final List<Meal> availableMeals;

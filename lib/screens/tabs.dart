@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app_4/data/meals_data.dart';
-import 'package:meals_app_4/main_drawer.dart';
+import 'package:meals_app_4/widgets/main_drawer.dart';
 import 'package:meals_app_4/models/meal.dart';
 import 'package:meals_app_4/screens/categories.dart';
 import 'package:meals_app_4/screens/filters.dart';
@@ -96,7 +96,6 @@ class _TabsScreenState extends State<TabsScreen> {
     Widget activePage = CategoriesScreen(
       onToggleFavorite: _toggleMealFavoriteStatus,
       availableMeals: availableMeals,
-      
     );
     var activePageTitle = 'Categories';
 
